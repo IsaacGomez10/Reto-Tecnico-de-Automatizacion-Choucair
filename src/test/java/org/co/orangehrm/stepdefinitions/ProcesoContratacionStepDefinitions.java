@@ -10,7 +10,6 @@ import org.co.orangehrm.interactions.ExcelData;
 import org.co.orangehrm.library.Excel;
 import org.co.orangehrm.navigate.NavigateTo;
 import org.co.orangehrm.questions.ValidarEstado;
-import org.co.orangehrm.tasks.AgregarCandidato;
 import org.co.orangehrm.tasks.Login;
 import org.co.orangehrm.tasks.RealizarContratacion;
 import org.co.orangehrm.userinterface.ReclutamientoPage;

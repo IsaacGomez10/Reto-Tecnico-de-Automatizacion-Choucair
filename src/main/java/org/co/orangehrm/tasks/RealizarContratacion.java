@@ -41,7 +41,7 @@ public class RealizarContratacion implements Task {
                 Click.on(ReclutamientoPage.BTN_PROGRAMAR_ENTREVISTA),
                 Enter.theValue(Excel.getTestData("Titulo entrevista")).into(ReclutamientoPage.INP_TITULO_ENTREVISTA),
                 WaitSeconds.wait(1),
-                Enter.theValue(Excel.getTestData("Entrevistador")).into(ReclutamientoPage.INP_ENTREVISTADOR),
+                Enter.theValue("a").into(ReclutamientoPage.INP_ENTREVISTADOR),
                 WaitElement.untilAppears(ReclutamientoPage.OPT_ENTREVISTADOR),
                 Click.on(ReclutamientoPage.OPT_ENTREVISTADOR),
                 Enter.theValue(Excel.getTestData("Fecha")).into(ReclutamientoPage.INP_FECHA_ENTREVISTA),
@@ -59,6 +59,8 @@ public class RealizarContratacion implements Task {
                 Click.on(ReclutamientoPage.BTN_GUARDAR),
                 WaitElement.untilAppears(ReclutamientoPage.BTN_CONTRATAR),
                 Click.on(ReclutamientoPage.BTN_CONTRATAR),
+                WaitSeconds.wait(1),
+                Click.on(ReclutamientoPage.BTN_GUARDAR),
                 WaitElement.untilAppears(ReclutamientoPage.CONTAINER_INFO),
                 Click.on(InicioPage.LINK_RECLUTAR),
                 WaitElement.untilAppears(ReclutamientoPage.ESTADO)
